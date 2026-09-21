@@ -1,0 +1,1048 @@
+/* =========================================
+   CONFIGURACIÓN GENERAL
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    overflow-x: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #000000,
+            #000000,
+            #000000,
+            #000000
+        );
+
+    position: relative;
+}
+
+
+/* =========================================
+   FONDO
+========================================= */
+
+.fondo {
+    position: fixed;
+
+    inset: 0;
+
+    overflow: hidden;
+
+    z-index: -1;
+}
+
+
+/* Luces */
+
+.burbuja {
+    position: absolute;
+
+    border-radius: 50%;
+
+    background: #f0e768;
+
+    filter: blur(8px);
+
+    animation: movimiento 7s ease-in-out infinite;
+}
+
+
+.b1 {
+    width: 170px;
+    height: 170px;
+
+    left: 4%;
+    top: 15%;
+}
+
+
+.b2 {
+    width: 100px;
+    height: 100px;
+
+    left: 35%;
+    top: 7%;
+
+    animation-delay: 1s;
+}
+
+
+.b3 {
+    width: 190px;
+    height: 190px;
+
+    right: 5%;
+    top: 22%;
+
+    animation-delay: 2s;
+}
+
+
+.b4 {
+    width: 130px;
+    height: 130px;
+
+    left: 12%;
+    bottom: 5%;
+
+    animation-delay: 3s;
+}
+
+
+.b5 {
+    width: 230px;
+    height: 230px;
+
+    right: 20%;
+    bottom: -30px;
+
+    animation-delay: 4s;
+}
+
+
+.b6 {
+    width: 90px;
+    height: 90px;
+
+    left: 55%;
+    top: 45%;
+
+    animation-delay: 2s;
+}
+
+
+/* =========================================
+   CORAZONES DEL FONDO
+========================================= */
+
+.corazon-fondo {
+    position: absolute;
+
+    color: rgb(238, 228, 86);
+
+    font-size: 70px;
+
+    text-shadow:
+        0 0 15px rgba(247, 224, 96, 0.918);
+
+    animation: flotar-corazon 8s ease-in-out infinite;
+}
+
+
+.c1 {
+    left: 1%;
+    top: 10%;
+}
+
+
+.c2 {
+    left: 25%;
+    top: 18%;
+
+    font-size: 45px;
+
+    animation-delay: 2s;
+}
+
+
+.c3 {
+    right: 4%;
+    top: 9%;
+
+    font-size: 55px;
+
+    animation-delay: 1s;
+}
+
+
+.c4 {
+    left: 5%;
+    bottom: 20%;
+
+    font-size: 60px;
+
+    animation-delay: 3s;
+}
+
+
+.c5 {
+    right: 15%;
+    bottom: 15%;
+
+    font-size: 80px;
+
+    animation-delay: 4s;
+}
+
+
+.c6 {
+    left: 40%;
+    bottom: 3%;
+
+    font-size: 50px;
+
+    animation-delay: 2s;
+}
+
+
+.c7 {
+    right: 35%;
+    top: 20%;
+
+    font-size: 35px;
+
+    animation-delay: 5s;
+}
+
+
+.c8 {
+    left: 50%;
+    top: 3%;
+
+    font-size: 45px;
+
+    animation-delay: 1s;
+}
+
+.c9 {
+    left: 75%;
+    top: 3%;
+
+    font-size: 45px;
+
+    animation-delay: 1s;
+}
+
+.c10 {
+    left: 40%;
+    top: 3%;
+
+    font-size: 45px;
+
+    animation-delay: 1s;
+}
+
+.c11 {
+    left: 30%;
+    top: 3%;
+
+    font-size: 45px;
+
+    animation-delay: 1s;
+}
+
+.c12 {
+    left: 20%;
+    top: 3%;
+
+    font-size: 45px;
+
+    animation-delay: 1s;
+}
+
+
+
+
+
+
+
+/* =========================================
+   ENCABEZADO
+========================================= */
+
+.encabezado {
+
+    height: 120px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding-left: 7%;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0),
+            rgba(255, 225, 255, 0)
+        );
+
+    box-shadow:
+        0 5px 25px rgba(0, 0, 0, 0.15);
+
+}
+
+
+.encabezado h1 {
+
+    color: rgba(255, 255, 255, 0.753);
+
+    font-size: 34px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+}
+
+
+.encabezado h1 span {
+
+    color: #ff8c00;
+
+    font-size: 42px;
+
+    margin-left: 10px;
+
+    text-shadow:
+        0 2px 2px rgba(0, 0, 0, 0.3);
+
+}
+
+
+/* =========================================
+   TARJETA PRINCIPAL
+========================================= */
+
+main {
+
+    padding-bottom: 50px;
+
+}
+
+
+.tarjeta {
+
+    width: 92%;
+
+    max-width: 900px;
+
+    height: 560px;
+
+    margin: 35px auto 0;
+
+    background: #f8efe500;
+
+    border-radius: 38px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 18px 50px rgba(0, 0, 0, 0.25);
+
+}
+
+
+/* =========================================
+   TEXTO
+========================================= */
+
+.texto {
+
+    position: absolute;
+
+    left: 6%;
+
+    top: 100px;
+
+    width: 42%;
+
+    z-index: 5;
+
+    color: #f3f3f3;
+
+}
+
+
+.titulo-texto {
+
+    font-size: 20px;
+
+    line-height: 1.3;
+
+    margin-bottom: 1px;
+
+}
+
+
+.frase {
+
+    font-size: 18px;
+
+    line-height: 1.1;
+
+}
+
+
+/* =========================================
+   ÁRBOL
+========================================= */
+
+.arbol {
+
+    position: absolute;
+
+    right: 5%;
+
+    bottom: 35px;
+
+    width: 52%;
+
+    height: 470px;
+
+}
+
+
+/* =========================================
+   COPA DEL ÁRBOL
+========================================= */
+
+.copa {
+
+    position: absolute;
+
+    width: 390px;
+
+    height: 390px;
+
+    left: 50%;
+
+    top: 0;
+
+    transform: translateX(-50%);
+
+}
+
+
+/* =========================================
+   FLORES
+========================================= */
+
+.flor {
+
+    position: absolute;
+
+    font-size: 31px;
+
+    line-height: 1;
+
+    filter:
+        drop-shadow(0 1px 2px rgba(80, 50, 0, 0.5));
+
+    animation:
+        brillo 2s ease-in-out infinite alternate;
+
+}
+
+
+/*
+   FORMA DEL CORAZÓN
+*/
+
+
+.f1  { left: 19%; top: 8%; }
+.f2  { left: 31%; top: 3%; }
+.f3  { left: 43%; top: 1%; }
+.f4  { left: 55%; top: 3%; }
+.f5  { left: 67%; top: 8%; }
+
+
+.f6  { left: 10%; top: 18%; }
+.f7  { left: 22%; top: 14%; }
+.f8  { left: 35%; top: 13%; }
+.f9  { left: 49%; top: 14%; }
+.f10 { left: 62%; top: 13%; }
+.f11 { left: 75%; top: 18%; }
+
+
+.f12 { left: 6%; top: 29%; }
+.f13 { left: 18%; top: 25%; }
+.f14 { left: 31%; top: 26%; }
+.f15 { left: 44%; top: 27%; }
+.f16 { left: 57%; top: 26%; }
+.f17 { left: 70%; top: 25%; }
+.f18 { left: 82%; top: 35%; }
+
+
+.f19 { left: 12%; top: 41%; }
+.f20 { left: 25%; top: 39%; }
+.f21 { left: 39%; top: 40%; }
+.f22 { left: 52%; top: 41%; }
+.f23 { left: 65%; top: 39%; }
+.f24 { left: 75%; top: 40%; }
+.f26 { left: 69%; top: 55%; }
+.f27 { left: 53%; top: 55%; }
+.f28 { left: 84%; top: 55%; }
+.f29 { left: 40%; top: 55%; }
+.f30 { left: 30%; top: 55%; }
+
+
+
+.f25 { left: 15%; top: 53%; }
+
+
+/* =========================================
+   TRONCO
+========================================= */
+
+.tronco {
+
+    position: absolute;
+
+    width: 45px;
+
+    height: 190px;
+
+    bottom: 0;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background:
+        linear-gradient(
+            90deg,
+            #6d3214,
+            #a45e2a,
+            #c07a3b,
+            #743512
+        );
+
+    border-radius:
+        12px 12px 5px 5px;
+
+    box-shadow:
+        inset 3px 0 5px rgba(255,255,255,0.15),
+        5px 0 8px rgba(0,0,0,0.15);
+
+    z-index: 2;
+
+}
+
+
+/* Ramas */
+
+.rama {
+
+    position: absolute;
+
+    width: 19px;
+
+    height: 105px;
+
+    background: #743714;
+
+    border-radius: 10px;
+
+}
+
+
+.izquierda {
+
+    top: -45px;
+
+    left: 2px;
+
+    transform:
+        rotate(-35deg);
+
+}
+
+
+.derecha {
+
+    top: -40px;
+
+    right: 2px;
+
+    transform:
+        rotate(35deg);
+
+}
+
+
+/* =========================================
+   FLORES CAÍDAS
+========================================= */
+
+.flor-suelta {
+
+    position: absolute;
+
+    font-size: 22px;
+
+    z-index: 4;
+
+    animation:
+        caida 3s ease-in-out infinite;
+}
+
+
+.fs1 {
+    left: 18%;
+    top: 67%;
+}
+
+
+.fs2 {
+    left: 31%;
+    top: 78%;
+
+    animation-delay: 1s;
+}
+
+
+.fs3 {
+    left: 42%;
+    top: 68%;
+
+    animation-delay: 2s;
+}
+
+
+.fs4 {
+    left: 12%;
+    top: 80%;
+
+    animation-delay: .5s;
+}
+
+
+.fs5 {
+    left: 50%;
+    top: 76%;
+
+    animation-delay: 1.5s;
+}
+
+.fs6 {
+    left: 22%;
+    top: 76%;
+
+    animation-delay: 1.8s;
+}
+
+.fs7 {
+    left: 45%;
+    top: 76%;
+
+    animation-delay: 1.2s;
+}
+
+.fs8 {
+    left: 59%;
+    top: 76%;
+
+    animation-delay: 2.2s;
+}
+
+
+/* =========================================
+   CONTADOR
+========================================= */
+
+.contador {
+
+    position: absolute;
+
+    left: 6%;
+
+    bottom: 35px;
+
+    color: #f5f5f0;
+
+    z-index: 8;
+
+}
+
+
+.contador p {
+
+    font-size: 20px;
+
+    margin-bottom: 4px;
+
+}
+
+
+#tiempo {
+
+    font-size: 21px;
+
+    font-weight: 500;
+
+}
+
+
+/* =========================================
+   LÍNEA
+========================================= */
+
+.linea {
+
+    position: absolute;
+
+    bottom: 22px;
+
+    left: 20px;
+
+    right: 20px;
+
+    height: 2px;
+
+    background: #333;
+
+    z-index: 6;
+
+}
+
+
+/* =========================================
+   BOTÓN
+========================================= */
+
+.boton {
+
+    display: block;
+
+    margin: 30px auto 0;
+
+    border: none;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 19px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+
+.boton span {
+
+    color: #ff8c00;
+
+    font-size: 24px;
+
+}
+
+
+.boton:hover {
+
+    transform: scale(1.08);
+
+}
+
+
+/* =========================================
+   MENSAJE
+========================================= */
+
+#mensaje {
+
+    text-align: center;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    opacity: 0;
+
+    transform: translateY(10px);
+
+    transition: .6s;
+
+    margin-top: 15px;
+
+}
+
+
+#mensaje.mostrar {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+
+/* =========================================
+   CORAZONES AL PRESIONAR
+========================================= */
+
+.corazon-volando {
+
+    position: fixed;
+
+    bottom: -30px;
+
+    color: #ff8c00;
+
+    font-size: 25px;
+
+    z-index: 100;
+
+    animation:
+        subir 5s linear forwards;
+
+}
+
+
+/* =========================================
+   ANIMACIONES
+========================================= */
+
+@keyframes movimiento {
+
+    0%, 100% {
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        transform: translateY(-25px) scale(1.08);
+    }
+
+}
+
+
+@keyframes flotar-corazon {
+
+    0%, 100% {
+        transform:
+            translateY(0)
+            rotate(-8deg);
+    }
+
+    50% {
+        transform:
+            translateY(-20px)
+            rotate(8deg);
+    }
+
+}
+
+
+@keyframes brillo {
+
+    from {
+        transform: scale(.92);
+    }
+
+    to {
+        transform: scale(1.08);
+    }
+
+}
+
+
+@keyframes caida {
+
+    0%, 100% {
+        transform:
+            translateY(0)
+            rotate(0deg);
+    }
+
+    50% {
+        transform:
+            translateY(10px)
+            rotate(20deg);
+    }
+
+}
+
+
+@keyframes subir {
+
+    0% {
+        transform:
+            translateY(0)
+            scale(.8);
+
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    100% {
+        transform:
+            translateY(-100vh)
+            scale(1.3)
+            rotate(360deg);
+
+        opacity: 0;
+    }
+
+}
+
+
+
+
+/* =========================================
+   CELULAR
+========================================= */
+
+@media (max-width: 700px) {
+
+    .encabezado {
+
+        height: 95px;
+
+        padding-left: 25px;
+
+    }
+
+
+    .encabezado h1 {
+
+        font-size: 28px;
+
+    }
+
+
+    .encabezado h1 span {
+
+        font-size: 35px;
+
+    }
+
+
+    .tarjeta {
+
+        width: 94%;
+
+        height: 550px;
+
+        margin-top: 25px;
+
+        border-radius: 30px;
+
+    }
+
+
+    .texto {
+
+        left: 25px;
+
+        top: 65px;
+
+        width: 48%;
+
+    }
+
+
+    .titulo-texto {
+
+        font-size: 17px;
+
+        margin-bottom: 25px;
+
+    }
+
+
+    .frase {
+
+        font-size: 16px;
+
+    }
+
+
+    .arbol {
+
+        right: -30px;
+
+        bottom: 55px;
+
+        width: 60%;
+
+        height: 350px;
+
+    }
+
+
+    .copa {
+
+        width: 270px;
+
+        height: 270px;
+
+    }
+
+
+    .flor {
+
+        font-size: 21px;
+
+    }
+
+
+    .tronco {
+
+        width: 32px;
+
+        height: 145px;
+
+    }
+
+
+    .contador {
+
+        left: 25px;
+
+        bottom: 38px;
+
+    }
+
+
+    .contador p {
+
+        font-size: 14px;
+
+    }
+
+
+    #tiempo {
+
+        font-size: 14px;
+
+    }
+
+
+    .linea {
+
+        bottom: 22px;
+
+    }
+
+
+    .boton {
+
+        font-size: 17px;
+
+    }
+
+}
